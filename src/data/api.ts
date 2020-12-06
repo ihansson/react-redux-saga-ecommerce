@@ -1,7 +1,9 @@
 import _products from "./products.json";
-import { filterCallback, IProduct } from "./schema";
+import _filters from "./filters.json";
+import { filterCallback, IProduct, IFilter } from "./schema";
 
 const products = _products as IProduct[];
+const filters = _filters as IFilter[];
 
 export const getProducts = (
   filter?: filterCallback<IProduct>
@@ -21,6 +23,14 @@ export const getProduct = (id: number) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(products.filter((product) => product.id === id)[0]);
+    }, 300);
+  });
+};
+
+export const getProductFilters = (): Promise<IFilter[]> => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(filters);
     }, 300);
   });
 };

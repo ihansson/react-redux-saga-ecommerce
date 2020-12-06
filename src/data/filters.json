@@ -1,0 +1,26 @@
+[
+  {
+    "name": "price",
+    "min": 0,
+    "max": 100,
+    "current": [0, 100]
+  },
+  {
+    "name": "material",
+    "options": [{
+      "name": "All",
+      "value": ""
+    },{
+      "name": "Metal",
+      "value": "metal"
+    },{
+      "name": "Wooden",
+      "value": "wooden"
+    }],
+    "current": ""
+  },
+  {
+    "name": "on_sale",
+    "current": ""
+  }
+]

@@ -1,20 +1,32 @@
-import { filterCallback, IProduct } from "./schema";
+import { filterCallback, IProduct, IFilter } from "./schema";
 import { useEffect, useState } from "react";
-import { getProducts } from "./api";
+import { getProductFilters, getProducts } from "./api";
 
-export const useGetProducts = (filter?: filterCallback<IProduct>) => {
-  const [products, setProducts] = useState([] as IProduct[]);
+export const useLoadingWithPromise = <T, A>(
+  def: T,
+  fn: (args?: A) => Promise<T>,
+  args?: A
+) => {
+  const [items, setItems] = useState(def);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setLoading(true);
     const makeRequest = async () => {
-      const results = await getProducts(filter);
-      setProducts(results);
+      const results = await fn(args);
+      setItems(results);
       setLoading(false);
     };
     makeRequest();
-  }, [filter]);
+  }, [args, fn]);
 
-  return [loading, products] as [loading: boolean, products: IProduct[]];
+  return [loading, items] as [loading: boolean, items: T];
+};
+
+export const useGetProducts = (filter?: filterCallback<IProduct>) => {
+  return useLoadingWithPromise([] as IProduct[], getProducts, filter);
+};
+
+export const useGetFilters = () => {
+  return useLoadingWithPromise([] as IFilter[], getProductFilters);
 };
