@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Shovel",
+    "price": 25,
+    "material": "metal",
+    "on_sale": true
+  },
+  {
+    "id": 2,
+    "name": "Pitchfork",
+    "price": 15,
+    "material": "metal",
+    "on_sale": false
+  },
+  {
+    "id": 3,
+    "name": "Mallet",
+    "price": 10,
+    "material": "wooden",
+    "on_sale": true
+  },
+  {
+    "id": 4,
+    "name": "Bucket",
+    "price": 5,
+    "material": "wooden",
+    "on_sale": false
+  }
+]
