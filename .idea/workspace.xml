@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c48a54a-6273-44c2-be98-0405d016ae2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Helpers.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProductSearch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProductSearchResults.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/filters.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/hooks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductSearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductSearchResults.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearchResults.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/hooks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/schema.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +53,9 @@
       <recent name="C:\Users\ian\WebstormProjects\react-redux-saga-sc\src\components\ProductSearch.tsx" />
       <recent name="C:\Users\ian\WebstormProjects\react-redux-saga-sc\src\components\Helpers.tsx" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ian\WebstormProjects\react-redux-saga-sc\src\server" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -79,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607266921828</updated>
-      <workItem from="1607266922880" duration="6001000" />
+      <workItem from="1607266922880" duration="6110000" />
     </task>
     <task id="LOCAL-00001" summary="Data setup">
       <created>1607281896493</created>
@@ -88,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607281896493</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Filter setup">
+      <created>1607284820352</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607284820352</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +116,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Data setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data setup" />
+    <MESSAGE value="Filter setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Filter setup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

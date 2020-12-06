@@ -1,5 +1,5 @@
 import React from "react";
-import { IProduct } from "../data/schema";
+import { IProduct } from "../server/schema";
 import { NoResults } from "./Helpers";
 
 export const ProductSearchResults: React.FunctionComponent<{

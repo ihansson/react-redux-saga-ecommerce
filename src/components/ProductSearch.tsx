@@ -1,4 +1,4 @@
-import { useGetFilters, useGetProducts } from "../data/hooks";
+import { useGetFilters, useGetProducts } from "../server/hooks";
 import { Loading } from "./Helpers";
 import React from "react";
 import { ProductSearchResults } from "./ProductSearchResults";

@@ -1,5 +1,5 @@
 import React from "react";
-import { IFilter } from "../data/schema";
+import { IFilter } from "../server/schema";
 
 export const ProductSearchFilters: React.FunctionComponent<{
   filters: IFilter[];

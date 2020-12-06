@@ -1,5 +1,5 @@
-import _products from "./products.json";
-import _filters from "./filters.json";
+import _products from "../data/products.json";
+import _filters from "../data/filters.json";
 import { filterCallback, IProduct, IFilter } from "./schema";
 
 const products = _products as IProduct[];
