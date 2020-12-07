@@ -6,6 +6,7 @@ import {
   IOnSaleFilter,
   IPriceFilter,
 } from "../server/schema";
+import { store, action } from "../saga";
 
 export const ProductSearchFilters: React.FunctionComponent<{
   filters: IFilter[];
@@ -65,9 +66,13 @@ export const MaterialFilter: React.FunctionComponent<{
 export const OnSaleFilter: React.FunctionComponent<{
   filter: IOnSaleFilter;
 }> = ({ filter }) => {
+  const state = store.getState();
   return (
     <div>
+      State: {state}
+      <br />
       <input
+        onChange={() => action("INCREMENT_ASYNC")}
         type="checkbox"
         name={filter.name}
         defaultChecked={filter.current}
