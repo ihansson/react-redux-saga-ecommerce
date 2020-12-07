@@ -4,14 +4,10 @@
     <list default="true" id="1c48a54a-6273-44c2-be98-0405d016ae2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductSearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductSearchResults.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearchResults.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/hooks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/hooks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +76,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607266921828</updated>
-      <workItem from="1607266922880" duration="6110000" />
+      <workItem from="1607266922880" duration="6170000" />
+      <workItem from="1607313643988" duration="979000" />
     </task>
     <task id="LOCAL-00001" summary="Data setup">
       <created>1607281896493</created>
@@ -96,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607284820352</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Filter setup">
+      <created>1607284923671</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607284923671</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +116,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

@@ -1661,11 +1661,24 @@
   dependencies:
     "@types/react" "^16"
 
+"@types/react-motion@*":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@types/react-motion/-/react-motion-0.0.29.tgz#1a22e11bc1452150e8aa58463f72dd921ff10721"
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-native@*":
   version "0.63.37"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.63.37.tgz#c43df90c9d3cc082a97a49a53e989de26cb8ab45"
   dependencies:
     "@types/react" "*"
+
+"@types/react-slider@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/react-slider/-/react-slider-1.0.0.tgz#bdb29573d6cee2b269ff2814b3cadd08f5dc48d5"
+  dependencies:
+    "@types/react" "*"
+    "@types/react-motion" "*"
 
 "@types/react@*":
   version "17.0.0"
@@ -8022,6 +8035,10 @@ react-scripts@4.0.1:
     workbox-webpack-plugin "5.1.4"
   optionalDependencies:
     fsevents "^2.1.3"
+
+react-slider@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-slider/-/react-slider-1.1.2.tgz#d059f801615ef2cb3f6e226c232b2a4cbee0e615"
 
 react@^17.0.1:
   version "17.0.1"

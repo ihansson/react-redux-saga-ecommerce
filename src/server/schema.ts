@@ -30,7 +30,7 @@ export interface IMaterialFilterOption {
 
 export interface IOnSaleFilter {
   name: "on_sale";
-  value: boolean;
+  current: boolean;
 }
 
 export type IFilter = IPriceFilter | IMaterialFilter | IOnSaleFilter;
