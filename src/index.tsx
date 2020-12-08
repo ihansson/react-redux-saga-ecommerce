@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import { ProductSearch } from "./components/ProductSearch";
-import { store } from "./saga";
+import { store } from "./store";
+import { Provider } from "react-redux";
 
 function renderApp() {
   ReactDOM.render(
     <React.StrictMode>
-      <ProductSearch />
+      <Provider store={store}>
+        <ProductSearch />
+      </Provider>
     </React.StrictMode>,
     document.getElementById("root")
   );

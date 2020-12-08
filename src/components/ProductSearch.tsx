@@ -1,24 +1,32 @@
-import { useGetFilters, useGetProducts } from "../server/hooks";
 import { Loading } from "./Helpers";
-import React from "react";
+import React, { useEffect } from "react";
 import { ProductSearchResults } from "./ProductSearchResults";
 import { ProductSearchFilters } from "./ProductSearchFilters";
+import { useSelector } from "react-redux";
+import { IState } from "../server/schema";
+import { action } from "../store";
 
 export const ProductSearch = () => {
-  const [loadingProducts, products] = useGetProducts();
-  const [loadingFilters, filters] = useGetFilters();
+  const filters = useSelector((state: IState) => state.filters);
+  const products = useSelector((state: IState) => state.products);
+  const loading = useSelector((state: IState) => state.loading);
+
+  useEffect(() => {
+    action({ type: "GET_FILTERS" });
+    action({ type: "GET_PRODUCTS" });
+  }, []);
 
   return (
     <div>
       <aside>
-        {loadingFilters ? (
+        {loading.filters ? (
           <Loading />
         ) : (
           <ProductSearchFilters filters={filters} />
         )}
       </aside>
       <main>
-        {loadingProducts ? (
+        {loading.products ? (
           <Loading />
         ) : (
           <ProductSearchResults products={products} />

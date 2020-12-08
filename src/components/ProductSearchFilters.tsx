@@ -6,7 +6,7 @@ import {
   IOnSaleFilter,
   IPriceFilter,
 } from "../server/schema";
-import { store, action } from "../saga";
+import { action } from "../store";
 
 export const ProductSearchFilters: React.FunctionComponent<{
   filters: IFilter[];
@@ -30,7 +30,6 @@ export const ProductSearchFilters: React.FunctionComponent<{
 export const PriceFilter: React.FunctionComponent<{ filter: IPriceFilter }> = ({
   filter,
 }) => {
-  // Async dispatch here, do stuff like cancel requests if we get multiple
   return (
     <div style={{ height: "1em" }}>
       <ReactSlider
@@ -66,13 +65,16 @@ export const MaterialFilter: React.FunctionComponent<{
 export const OnSaleFilter: React.FunctionComponent<{
   filter: IOnSaleFilter;
 }> = ({ filter }) => {
-  const state = store.getState();
   return (
     <div>
-      State: {state}
-      <br />
       <input
-        onChange={() => action("INCREMENT_ASYNC")}
+        onChange={(e: any) =>
+          action({
+            type: "UPDATE_FILTER",
+            filterIndex: 2,
+            value: e.target.checked,
+          })
+        }
         type="checkbox"
         name={filter.name}
         defaultChecked={filter.current}

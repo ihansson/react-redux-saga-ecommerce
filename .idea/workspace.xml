@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c48a54a-6273-44c2-be98-0405d016ae2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/saga.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/sagas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductSearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearch.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/saga.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/ProductFilters.tsx" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/server/reducer.ts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -43,10 +50,11 @@
   </component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
+      <recent name="C:\Users\ian\WebstormProjects\react-redux-saga-sc\src\server\reducer.ts" />
+      <recent name="C:\Users\ian\WebstormProjects\react-redux-saga-sc\src\server\sagas.ts" />
       <recent name="C:\Users\ian\WebstormProjects\react-redux-saga-sc\src\components\ProductFilters.tsx" />
       <recent name="C:\Users\ian\WebstormProjects\react-redux-saga-sc\src\components\ProductSearchResults.tsx" />
       <recent name="C:\Users\ian\WebstormProjects\react-redux-saga-sc\src\components\ProductSearch.tsx" />
-      <recent name="C:\Users\ian\WebstormProjects\react-redux-saga-sc\src\components\Helpers.tsx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ian\WebstormProjects\react-redux-saga-sc\src\server" />
@@ -76,7 +84,9 @@
       <option name="presentableId" value="Default" />
       <updated>1607266921828</updated>
       <workItem from="1607266922880" duration="6170000" />
-      <workItem from="1607313643988" duration="2954000" />
+      <workItem from="1607313643988" duration="3124000" />
+      <workItem from="1607366772980" duration="164000" />
+      <workItem from="1607400833729" duration="3527000" />
     </task>
     <task id="LOCAL-00001" summary="Data setup">
       <created>1607281896493</created>
@@ -106,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607314636011</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Configure redux saga store">
+      <created>1607316832879</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607316832879</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +146,19 @@
     <MESSAGE value="Data setup" />
     <MESSAGE value="Filter setup" />
     <MESSAGE value="Adding filter outputs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding filter outputs" />
+    <MESSAGE value="Configure redux saga store" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configure redux saga store" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/ProductSearch.tsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,3 +1,12 @@
+export interface IState {
+  products: IProduct[];
+  filters: IFilter[];
+  loading: {
+    products: boolean;
+    filters: boolean;
+  };
+}
+
 export interface IProduct {
   id: number;
   name: string;
@@ -8,7 +17,7 @@ export interface IProduct {
 
 export type materialType = "metal" | "wooden";
 
-export type filterCallback<T> = (x: T) => T;
+export type filterCallback<T> = (x: T) => boolean;
 
 export interface IPriceFilter {
   name: "price";
