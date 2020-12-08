@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactSlider from "react-slider";
 import {
-  IFilter,
   IMaterialFilter,
   IOnSaleFilter,
   IPriceFilter,
+  IState,
 } from "../server/schema";
 import { action } from "../store";
+import { useSelector } from "react-redux";
+import { Loading } from "./Helpers";
 
-export const ProductSearchFilters: React.FunctionComponent<{
-  filters: IFilter[];
-}> = ({ filters }) => {
+export const ProductSearchFilters = () => {
+  const filters = useSelector((state: IState) => state.filters);
+  const loading = useSelector((state: IState) => state.loading.filters);
+
+  useEffect(() => {
+    action({ type: "GET_FILTERS" });
+  }, []);
+
+  if (loading) return <Loading />;
   return (
     <div>
       {filters.map((filter) => (

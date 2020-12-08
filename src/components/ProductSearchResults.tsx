@@ -1,11 +1,20 @@
-import React from "react";
-import { IProduct } from "../server/schema";
-import { NoResults } from "./Helpers";
+import React, { useEffect } from "react";
+import { IState } from "../server/schema";
+import { Loading, NoResults } from "./Helpers";
+import { useSelector } from "react-redux";
+import { action } from "../store";
 
-export const ProductSearchResults: React.FunctionComponent<{
-  products: IProduct[];
-}> = ({ products }) => {
+export const ProductSearchResults = () => {
+  const products = useSelector((state: IState) => state.products);
+  const loading = useSelector((state: IState) => state.loading.products);
+
+  useEffect(() => {
+    action({ type: "GET_PRODUCTS" });
+  }, []);
+
+  if (loading) return <Loading />;
   if (products.length === 0) return <NoResults />;
+
   return (
     <section>
       {products.map((product) => (

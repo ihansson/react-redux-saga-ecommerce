@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c48a54a-6273-44c2-be98-0405d016ae2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/server/reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/sagas.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductSearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearch.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saga.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProductSearchResults.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearchResults.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +79,7 @@
       <workItem from="1607266922880" duration="6170000" />
       <workItem from="1607313643988" duration="3124000" />
       <workItem from="1607366772980" duration="164000" />
-      <workItem from="1607400833729" duration="3527000" />
+      <workItem from="1607400833729" duration="3894000" />
     </task>
     <task id="LOCAL-00001" summary="Data setup">
       <created>1607281896493</created>
@@ -123,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607316832879</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Filter sagas">
+      <created>1607404403087</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607404403087</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,18 +147,9 @@
     <MESSAGE value="Filter setup" />
     <MESSAGE value="Adding filter outputs" />
     <MESSAGE value="Configure redux saga store" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configure redux saga store" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/ProductSearch.tsx</url>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Filter sagas" />
+    <MESSAGE value="Refactor state into child components" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor state into child components" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
