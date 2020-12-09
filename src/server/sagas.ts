@@ -1,5 +1,5 @@
 import { put, select, takeLatest } from "redux-saga/effects";
-import { filterCallback, IProduct, IState } from "./schema";
+import { filterCallback, IFilter, IProduct, IState } from "./schema";
 import { getProductFilters, getProducts } from "./api";
 
 function* actionGetProducts() {
@@ -22,12 +22,26 @@ export function* watchGetFilters() {
 
 const getFilterSelect = (state: IState) => state.filters;
 
-function* actionUpdateFilter(args: any) {
+function* actionUpdateFilter() {
   const filters = yield select(getFilterSelect);
   const filterFn = ((product) => {
-    const on_sale = filters[2].current;
-    if (on_sale) return product.on_sale;
-    return true;
+    let match = true;
+    filters.map((filter: IFilter) => {
+      if (filter.name === "price") {
+        if (
+          product.price < filter.current[0] ||
+          product.price > filter.current[1]
+        ) {
+          match = false;
+        }
+      } else {
+        if (filter.current && filter.current !== product[filter.name]) {
+          match = false;
+        }
+      }
+      return filter;
+    });
+    return match;
   }) as filterCallback<IProduct>;
   const products = yield getProducts(filterFn);
   yield put({ type: "SET_PRODUCTS", products });

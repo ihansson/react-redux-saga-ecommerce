@@ -41,6 +41,13 @@ export const PriceFilter: React.FunctionComponent<{ filter: IPriceFilter }> = ({
   return (
     <div style={{ height: "1em" }}>
       <ReactSlider
+        onChange={(values) => {
+          action({
+            type: "UPDATE_FILTER",
+            filterIndex: 0,
+            value: values,
+          });
+        }}
         defaultValue={[filter.min, filter.max]}
         renderThumb={(props, state) => <div {...props}>{state.valueNow}</div>}
         pearling
@@ -58,6 +65,13 @@ export const MaterialFilter: React.FunctionComponent<{
       {filter.options.map((option) => (
         <div key={option.name}>
           <input
+            onChange={(e: any) =>
+              action({
+                type: "UPDATE_FILTER",
+                filterIndex: 1,
+                value: e.target.value,
+              })
+            }
             type="radio"
             name={filter.name}
             defaultChecked={filter.current === option.value}

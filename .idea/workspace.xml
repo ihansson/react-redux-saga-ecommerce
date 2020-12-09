@@ -4,9 +4,10 @@
     <list default="true" id="1c48a54a-6273-44c2-be98-0405d016ae2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductSearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearchFilters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProductSearchResults.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProductSearchResults.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/sagas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/sagas.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,8 @@
       <workItem from="1607266922880" duration="6170000" />
       <workItem from="1607313643988" duration="3124000" />
       <workItem from="1607366772980" duration="164000" />
-      <workItem from="1607400833729" duration="3894000" />
+      <workItem from="1607400833729" duration="3974000" />
+      <workItem from="1607483787067" duration="1322000" />
     </task>
     <task id="LOCAL-00001" summary="Data setup">
       <created>1607281896493</created>
@@ -123,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607404403087</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactor state into child components">
+      <created>1607404733372</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607404733372</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +158,8 @@
     <MESSAGE value="Configure redux saga store" />
     <MESSAGE value="Filter sagas" />
     <MESSAGE value="Refactor state into child components" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor state into child components" />
+    <MESSAGE value="Filter functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Filter functionality" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
