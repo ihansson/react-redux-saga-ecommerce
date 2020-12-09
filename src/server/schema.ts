@@ -1,7 +1,9 @@
 export interface IState {
   products: IProduct[];
   filters: IFilter[];
+  product: IProduct;
   loading: {
+    product: boolean;
     products: boolean;
     filters: boolean;
   };

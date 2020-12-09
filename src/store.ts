@@ -3,6 +3,7 @@ import createSagaMiddleware from "redux-saga";
 import { all } from "redux-saga/effects";
 import {
   watchGetFilters,
+  watchGetProduct,
   watchGetProducts,
   watchUpdateFilter,
 } from "./server/sagas";
@@ -11,7 +12,12 @@ import { defaultState, reducer } from "./server/reducer";
 // Reducer
 
 function* rootSaga() {
-  yield all([watchGetProducts(), watchGetFilters(), watchUpdateFilter()]);
+  yield all([
+    watchGetProducts(),
+    watchGetProduct(),
+    watchGetFilters(),
+    watchUpdateFilter(),
+  ]);
 }
 
 const sagaMiddleware = createSagaMiddleware();

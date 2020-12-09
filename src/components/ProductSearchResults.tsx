@@ -3,6 +3,7 @@ import { IState } from "../server/schema";
 import { Loading, NoResults } from "./Helpers";
 import { useSelector } from "react-redux";
 import { action } from "../store";
+import { Link } from "react-router-dom";
 
 export const ProductSearchResults = () => {
   const products = useSelector((state: IState) => state.products);
@@ -19,9 +20,11 @@ export const ProductSearchResults = () => {
     <section>
       {products.map((product) => (
         <div key={product.id}>
-          <h2>
-            {product.name} (SKU: {product.id})
-          </h2>
+          <Link to={`product/${product.id}`}>
+            <h2>
+              {product.name} (SKU: {product.id})
+            </h2>
+          </Link>
           <div>
             <h3>{product.price}</h3>
             <strong>Material: </strong> {product.material}

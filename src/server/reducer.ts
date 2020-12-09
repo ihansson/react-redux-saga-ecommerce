@@ -3,7 +3,9 @@ import { IFilter, IProduct } from "./schema";
 export const defaultState = {
   products: [] as IProduct[],
   filters: [] as IFilter[],
+  product: {} as IProduct,
   loading: {
+    product: false,
     products: false,
     filters: false,
   },
@@ -11,6 +13,14 @@ export const defaultState = {
 
 export function reducer(state: any, action: any) {
   switch (action.type) {
+    case "GET_PRODUCT":
+      return { ...state, loading: { ...state.loading, product: true } };
+    case "SET_PRODUCT":
+      return {
+        ...state,
+        product: action.product,
+        loading: { ...state.loading, product: false },
+      };
     case "GET_PRODUCTS":
       return { ...state, loading: { ...state.loading, products: true } };
     case "SET_PRODUCTS":

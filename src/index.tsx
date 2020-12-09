@@ -4,12 +4,22 @@ import reportWebVitals from "./reportWebVitals";
 import { ProductSearch } from "./components/ProductSearch";
 import { store } from "./store";
 import { Provider } from "react-redux";
+import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import { ProductPage } from "./components/ProductPage";
 
 function renderApp() {
   ReactDOM.render(
     <React.StrictMode>
       <Provider store={store}>
-        <ProductSearch />
+        <BrowserRouter>
+          <header>
+            <Link to="/">Home</Link> <Link to="/checkout">Checkout</Link>
+          </header>
+          <Switch>
+            <Route exact path="/product/:id" children={<ProductPage />} />
+            <Route exact path="/" children={<ProductSearch />} />
+          </Switch>
+        </BrowserRouter>
       </Provider>
     </React.StrictMode>,
     document.getElementById("root")

@@ -1,6 +1,15 @@
 import { put, select, takeLatest } from "redux-saga/effects";
 import { filterCallback, IFilter, IProduct, IState } from "./schema";
-import { getProductFilters, getProducts } from "./api";
+import { getProductFilters, getProducts, getProduct } from "./api";
+
+function* actionGetProduct(action: any) {
+  const product = yield getProduct(parseInt(action.id));
+  yield put({ type: "SET_PRODUCT", product });
+}
+
+export function* watchGetProduct() {
+  yield takeLatest("GET_PRODUCT", actionGetProduct);
+}
 
 function* actionGetProducts() {
   const products = yield getProducts();
