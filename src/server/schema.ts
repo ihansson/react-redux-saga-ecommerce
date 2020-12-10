@@ -2,11 +2,21 @@ export interface IState {
   products: IProduct[];
   filters: IFilter[];
   product: IProduct;
+  basket: IBasket;
   loading: {
     product: boolean;
     products: boolean;
     filters: boolean;
   };
+}
+
+export interface IBasketItem {
+  product: IProduct;
+  quantity: number;
+}
+
+export interface IBasket {
+  items: IBasketItem[];
 }
 
 export interface IProduct {

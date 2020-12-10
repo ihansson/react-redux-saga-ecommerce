@@ -31,7 +31,9 @@ export const ProductSearchResults = () => {
             <br />
             <strong>On Sale: </strong> {product.on_sale ? "Yes" : "No"}
           </div>
-          <button>Buy</button>
+          <button onClick={() => action({ type: "ADD_TO_BASKET", product })}>
+            Buy
+          </button>
         </div>
       ))}
     </section>

@@ -6,6 +6,7 @@ import { store } from "./store";
 import { Provider } from "react-redux";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import { ProductPage } from "./components/ProductPage";
+import Basket from "./components/Basket";
 
 function renderApp() {
   ReactDOM.render(
@@ -14,6 +15,7 @@ function renderApp() {
         <BrowserRouter>
           <header>
             <Link to="/">Home</Link> <Link to="/checkout">Checkout</Link>
+            <Basket />
           </header>
           <Switch>
             <Route exact path="/product/:id" children={<ProductPage />} />
